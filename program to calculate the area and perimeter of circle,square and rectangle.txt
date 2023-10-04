@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main(){
+   float area,peri,r,l,b,s;
+   printf("Enter the value of length of the rectangle:");
+   scanf("%f",&l);
+   printf("Enter the value of breadth of the rectangle:");
+   scanf("%f",&b);
+   printf("Enter the value of side of the square:");
+   scanf("%f",&s);
+   printf("Enter the value of radius of the circle:");
+   scanf("%f",&r);
+   area=3.14*r*r;
+   peri=2*3.14*r;
+   printf("area of the circle:%f\n",area);
+   printf("perimeter of the circle:%f\n",peri);
+   area=s*s;
+   peri=4*s;
+   printf("area of thesquare:%f\n",area);
+   printf("perimeter of the square:%f\n",peri);
+   area=a*b;
+   peri=2*(a+b);
+   printf("area of the rectangle:%f\n",area);
+   printf("perimeter of the rectangle:%f\ns",area);
+}
