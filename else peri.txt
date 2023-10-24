@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int areac,areas,arear,peric,peris,perir;
+    int c;
+    printf("1 for area and perimeter of circle\n2 for area and perimetre of square\n3 for area an perimeter of rectangle\n");
+    printf("enter your choice:");
+    scanf("%d",&c);
+    if (c==1){
+    int r;
+    printf("enter the radius of the circle: ");
+    scanf("%d",&r);
+    areac=3.14*r*r;
+    peric=2*3.14*r;
+    printf("area and perimeter of circle is : %d\n%d",areac,peric);
+    }else if(c==2){
+    int s;
+    printf("enter the side of the square: ");
+    scanf("%d",&s);
+    areas=s*s;
+    peris=4*s;
+    printf("area and perimeter of square is : %d\n%d",areas,peris);
+    }else if(c==3){
+    int l,b;
+    printf("enter the length and breadth of the rectangle: ");
+     scanf("%d%d",&l,&b);
+    arear=l*b;
+    perir=2*(l+b);
+    printf("area and perimeter of rectangle is : %d\n%d",arear,perir);
+    }
+    return 0;
+    }
