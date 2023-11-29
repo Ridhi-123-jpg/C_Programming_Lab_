@@ -1,0 +1,30 @@
+#include <stdio.h>
+void main()
+{
+    int n, j, i, temp;
+    printf("enter the  number of elements in the array");
+    scanf("%d", &n);
+    int arr[n];
+    printf("enter %d elements : \n", n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    for (i = 0; i <= n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            if (arr[j] > arr[j + i])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + i];
+                arr[j + i] = temp;
+            }
+        }
+    }
+    printf("sorted array in ascending order");
+    for (i = 0; i < n; i++)
+    {
+        printf("\n%d", arr[i]);
+    }
+}
